@@ -108,8 +108,8 @@
       integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
       crossorigin="anonymous"
     />
-    <!-- <link rel="stylesheet" href="https://dci-web.s3-ap-southeast-1.amazonaws.com/annual-report-microsite/css/dci.css" /> -->
-    <link rel="stylesheet" href="css/dci.css" />
+    <link rel="stylesheet" href="https://dci-web.s3-ap-southeast-1.amazonaws.com/annual-report-microsite/css/dci.css" />
+    <!-- <link rel="stylesheet" href="css/dci.css" /> -->
 
     <title>DCI - Annual Report</title>
   </head>
@@ -121,7 +121,8 @@
           <div class="col-md-2">
             <a href="#">
               <img
-                src="https://d29awdk0p35fua.cloudfront.net/annual-report-microsite/image/dci-logo.png"
+                class="nav-brand-img"
+                src="https://d29awdk0p35fua.cloudfront.net/annual-report-microsite/image/dci_logo_white.svg"
                 alt=""
               />
             </a>
@@ -146,7 +147,7 @@
                     href="https://d29awdk0p35fua.cloudfront.net/annual-report-microsite/image/[DCI] Annual Report 2020.pdf"
                     download
                     >Download Report
-                    <i class="fa fa-arrow-down fa-md"></i> 
+                    <i class="fa fa-arrow-down fa-md"></i>
                   </a>
                 </li>
               </ul>
@@ -162,7 +163,7 @@
         <!-- Brand -->
         <a class="navbar-brand" href="#"
           ><img
-            src="https://d29awdk0p35fua.cloudfront.net/annual-report-microsite/image/dci-logo.png"
+            src="https://d29awdk0p35fua.cloudfront.net/annual-report-microsite/image/dci_logo_white.svg"
             alt=""
         /></a>
 
@@ -197,7 +198,7 @@
             </li>
             <li class="nav-item">
               <a
-                class="nav-link"
+                class="btn"
                 href="https://d29awdk0p35fua.cloudfront.net/annual-report-microsite/image/[DCI] Annual Report 2020.pdf"
                 download
                 >Download Our Report</a
@@ -252,8 +253,14 @@
       <div class="inner-video-banner">
         <div class="content-youtube">
           <video controls id="comprovideo">
-            <source src="image/DCI Company Profile.mp4" type="video/mp4" />
-            <source src="image/DCI Company Profile.mp4" type="video/ogg" />
+            <source
+              src="https://d29awdk0p35fua.cloudfront.net/annual-report-microsite/files/DCI Company Profile.mp4"
+              type="video/mp4"
+            />
+            <source
+              src="https://d29awdk0p35fua.cloudfront.net/annual-report-microsite/files/DCI Company Profile.mp4"
+              type="video/ogg"
+            />
           </video>
 
           <span id="close-vid">X</span>
@@ -299,6 +306,10 @@
                       for our customers. We believe by focusing on operational
                       excellence, DCI would be able to realize our vision and
                       mission of supporting the Indonesian digital economy.
+                      Moving forward, DCI will continue to focus on operational
+                      excellence while maintaining international IT standards,
+                      without compromising on local heritage, emphasizing a
+                      hospitable culture that serves with warmth.
                     </p>
 
                     <div class="inner-caption-analysis float-right">
@@ -326,6 +337,10 @@
                       for our customers. We believe by focusing on operational
                       excellence, DCI would be able to realize our vision and
                       mission of supporting the Indonesian digital economy.
+                      Moving forward, DCI will continue to focus on operational
+                      excellence while maintaining international IT standards,
+                      without compromising on local heritage, emphasizing a
+                      hospitable culture that serves with warmth.
                     </h1>
 
                     <div class="inner-bottom-analysis">
@@ -477,9 +492,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="download-report">
-              <h1>
-                Get Digital Report Here
-              </h1>
+              <h1>Get Digital Report Here</h1>
 
               <a
                 href="https://d29awdk0p35fua.cloudfront.net/annual-report-microsite/image/[DCI] Annual Report 2020.pdf"
@@ -504,7 +517,8 @@
                 <li>
                   <a
                     href="https://d29awdk0p35fua.cloudfront.net/annual-report-microsite/image/[DCI] Annual Report 2020.pdf"
-                    download class="btn"
+                    download
+                    class="btn"
                     >Download Report</a
                   >
                 </li>
@@ -558,6 +572,7 @@
       type="text/javascript"
       src="https://d29awdk0p35fua.cloudfront.net/annual-report-microsite/js/dci.js"
     ></script>
+    <!-- <script type="text/javascript" src="js/dci.js"></script> -->
     <script>
       $(document).ready(function () {
         DCI();
