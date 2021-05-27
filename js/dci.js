@@ -113,8 +113,6 @@ function DCI(){
       }
   });
 
-  var vidClip = document.getElementById("comprovideo"); 
-
   $('#show-video').click(function(e){
   	e.preventDefault();
   	$('.video-banner').fadeIn(500);
@@ -123,13 +121,18 @@ function DCI(){
   $('.video-banner').click(function(e){
   	e.preventDefault();
   	$('.video-banner').fadeOut(500);
-  	comprovideo.pause();
+  	$('.youtube-video').each(function(){
+		this.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
+	});
   });
 
   $('#close-vid').click(function(e){
   	e.preventDefault();
   	$('.video-banner').fadeOut(500);
-  	comprovideo.pause();
+  	$('.youtube-video').each(function(){
+		this.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
+	});
+	
   });
 
   $(window).load(function(){
@@ -147,7 +150,7 @@ $('html,body').animate({
     'slow');
 }
 
-$(".fixed-header .inner-fixed-header ul > li > a").on('click' , function(e) { 
+$(".fixed-header .inner-fixed-header ul > li.nav-link > a").on('click' , function(e) { 
       // Prevent a page reload when a link is pressed
     e.preventDefault(); 
       // Call the scroll function
